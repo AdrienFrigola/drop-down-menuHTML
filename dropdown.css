@@ -1,39 +1,45 @@
-.dropdown{
+/* Display dropdown as inline-block */
+.dropdown {
     display: inline-block;
 }
 
-
-.dropdown button{
-    background-color: hsl(0, 0%, 80%);
-    color: white;
-    padding: 10px 15px;
-    border : none;
-    cursor: pointer;
+/* Styling for the dropdown button */
+.dropdown button {
+    background-color: hsl(0, 0%, 80%); /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 15px; /* Add padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor style */
 }
 
-.dropdown a{
+/* Styling for the dropdown links */
+.dropdown a {
+    display: block; /* Display links as block elements */
+    color: black; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding */
+}
+
+/* Style for the dropdown content */
+.dropdown .content {
+    display: none; /* Hide content by default */
+    background-color: hsl(0, 0%, 95%); /* Set background color */
+    position: absolute; /* Set position to absolute */
+    min-width: 100px; /* Set minimum width */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add box shadow */
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .content {
     display: block;
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
 }
 
-.dropdown .content{
-    display: none;
-    background-color: hsl(0, 0%, 95%) ;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+/* Change button background color on hover */
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 70%);
 }
 
-.dropdown:hover .content{
-    display: block;
-}
-
-.dropdown:hover button{
-    background-color: hsl(0, 0%, 70%) ;
-}
-
-.dropdown a:hover{
-    background-color: hsl(0, 0%, 90%) ;
+/* Change link background color on hover */
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 90%);
 }
